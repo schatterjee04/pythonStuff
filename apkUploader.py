@@ -4,7 +4,7 @@ import time
 
 
 def upload(fileName):
-    params = {'apikey': '4be7c402ae4840712246a312d01c7f23790fc8314e93a57209154d581da2d1c6'}
+    params = {'apikey': ''}
     files = {'file': (fileName, open(fileName, 'rb'))}
     response = requests.post('https://www.virustotal.com/vtapi/v2/file/scan', files=files,params=params)
     print(response)
